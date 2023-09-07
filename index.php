@@ -10,7 +10,10 @@ for($i = 33; $i< 534; $i++){
     elseif ($i % 5 === 0) {
         echo "software <br>";
     } elseif ($i % 9 === 0) {
-        echo "developer <br>";
+        if ($i % 2 === 0){
+            echo "<b> developer <br> </b>";
+        }else echo "developer <br>";
+       
     }
     elseif ($i % 2 == 0) {
     echo " <b> $i <br> </b>";
